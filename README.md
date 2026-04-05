@@ -1,5 +1,10 @@
 # Business Contact Manager
 
+## Test Account
+
+Email: tiller@123.com  
+Password: 123456
+
 ## Project Overview
 
 This project is a full-stack Business Contact Manager web application developed for IFN636 A1.2. It enables authenticated users to manage business contacts through a secure and user-friendly interface.
@@ -52,14 +57,12 @@ This application demonstrates full-stack development with authentication, databa
 
 GitHub Actions is used to implement Continuous Integration.
 
+This ensures code quality and validates application functionality automatically before deployment.
+
 * Triggered on push & pull request  
 * Installs dependencies
 * Builds frontend application
 * Runs backend tests (Mocha)
-
-### CI Configuration
-
-![CI YAML](screenshots/yml.png)
 
 ### CI Result
 
@@ -69,29 +72,13 @@ The pipeline runs successfully after each commit.
 
 ---
 
-## Testing
-
-Backend testing is implemented using Mocha to validate core functionality.
-
-![Test Result](screenshots/testpass.png)
-
----
-
-## Git Workflow
-
-A feature-branch workflow is adopted:
-
-Feature Branch → Pull Request → Merge to Main
-
-![PR](screenshots/PR.png)
-
----
-
 ## Deployment (AWS EC2)
 
 The backend is deployed on an AWS EC2 instance and managed using PM2 as a process manager.
 
 PM2 is used to keep the application running continuously and handle process management in production.
+
+The application demonstrates basic DevOps practices including process management and cloud hosting.
 
 ### EC2 Instance
 
@@ -99,21 +86,21 @@ PM2 is used to keep the application running continuously and handle process mana
 
 ### Public Access
 
-The backend API is live and can be accessed through the deployed EC2 instance:
+The application was deployed on AWS EC2 as part of the development process.
 
+Note: In the AWS lab environment, the public IP address may change after instance restart, which can affect external accessibility.
+
+Backend API (for demonstration during development):
 http://3.107.53.51:5001
 
-![Public IP](screenshots/PubilcIP.png)
+
+![Public IP](screenshots/PublicIP.png)
 
 ### PM2 Process Status
 
 The application is running in fork mode and remains online.
 
 ![PM2](screenshots/pm2.png)
-
-### Running Application
-
-![Running](screenshots/readme.png)
 
 ---
 
@@ -207,6 +194,11 @@ npm start
 cd frontend
 npm start
 ```
+
+---
+
+### 5. Access the application:
+   http://localhost:3000
 
 ---
 
