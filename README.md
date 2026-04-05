@@ -86,12 +86,11 @@ The application demonstrates basic DevOps practices including process management
 
 ### Public Access
 
-The application was deployed on AWS EC2 as part of the development process.
+The backend API is deployed on an AWS EC2 instance and can be accessed via the following public URL:
 
-Note: In the AWS lab environment, the public IP address may change after instance restart, which can affect external accessibility.
+http://52.64.102.8:5001
 
-Backend API (for demonstration during development):
-http://3.107.53.51:5001
+Note: The application was deployed and tested successfully on AWS EC2. In the lab environment, public IP addresses are dynamically assigned and may change after instance restart.
 
 
 ![Public IP](screenshots/PublicIP.png)
